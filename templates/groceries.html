@@ -1,0 +1,24 @@
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Item</th>
+        <th>Type</th>
+        <th>Brand</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="grocery in vm.groceries | orderBy: 'category' ">
+        <td>
+          <img ng-src="{{vm.getCategorySVG(grocery.category)}}" width="50px"/>
+        </td>
+        <td>{{grocery.item}}</td>
+        <td>{{grocery.type}}</td>
+        <td>{{grocery.brand}}</td>
+        <td>{{grocery.qty}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

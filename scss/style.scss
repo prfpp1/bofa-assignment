@@ -1,0 +1,35 @@
+body {
+  padding: 10px;
+  text-align: center;
+  
+  .table-container {
+    max-width: 100%;
+    overflow: scroll;
+    
+    table {
+      thead {
+        border-bottom: 2px solid #222;
+        padding: 20px;
+      }
+      
+      max-width: 100%;
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #ddd;
+      
+      tr:nth-of-type(odd) {
+        background-color: #f9f9f9;
+      }
+      tbody tr {
+        border-bottom: 1px solid #ccc;
+        
+        td {
+          padding: 10px;
+        }
+      }
+      
+    }
+  }
+  
+  
+}
